@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% block content %}
+<div class="container">
+ <h1 style="font-size:2.5em; color:Tomato; "> Welcome to Login Page </h1>    
+ <form style="font-size:1.0em; color:DodgerBlue;" method="post">
+     {% csrf_token %}
+     {% bootstrap_form form %} 
+     <input type="submit" class='btn btn-default' value="Login">
+      </form>
+</div>
+{% endblock %}
